@@ -10,7 +10,8 @@
 | formik | 2.2.9 |
 | yup | 0.32.11 |
 | lottie-react-native | 5.1.5 |
-| react-native-elements | v4|
+| react-native-elements | v4 |
+| react-navigation | v6 |
 
 
 `UI Example`
