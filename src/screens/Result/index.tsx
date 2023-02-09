@@ -35,7 +35,7 @@ const ResultScreen = (props: Props) => {
   }
 
   return (
-    <KeyboardAwareScrollView enableOnAndroid>
+    <KeyboardAwareScrollView enableOnAndroid style={styles.scrollContainer}>
       <SafeAreaView style={styles.container}>
         <Header title='Result' titleColor={color} />
         <Animated.View entering={FadeInUp.delay(500)} exiting={FadeOutUp}>

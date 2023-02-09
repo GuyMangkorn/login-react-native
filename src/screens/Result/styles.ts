@@ -3,6 +3,9 @@ import { Dimensions, StyleSheet } from 'react-native'
 const { height } = Dimensions.get('window')
 
 export default StyleSheet.create({
+  scrollContainer: {
+    backgroundColor: 'white',
+  },
   container: {
     flex: 1,
     backgroundColor: 'white',
@@ -21,4 +24,4 @@ export default StyleSheet.create({
     height: height * 0.4,
     alignSelf: 'center',
   },
-})
+});

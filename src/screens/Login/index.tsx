@@ -26,7 +26,7 @@ const LoginScreen = (props: Props): JSX.Element => {
   }, [authContext?.isSuccess, authContext?.isError])
 
   return (
-    <KeyboardAwareScrollView enableOnAndroid>
+    <KeyboardAwareScrollView enableOnAndroid style={styles.scrollContainer}>
       <SafeAreaView style={styles.container}>
         <Header disableGoBack title='Sign in' />
         <Loading visible={authContext?.loading} />
