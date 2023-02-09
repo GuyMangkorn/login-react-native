@@ -1,5 +1,18 @@
 ## Login ReactNative
 
+### Packages
+
+| Name | Version|
+| ------ |------|
+| react-native | 0.71.2 |
+| react-native-keyboard-aware-scroll-view | 0.9.5 |
+| react-native-reanimated | 2.14.4 |
+| formik | 2.2.9 |
+| yup | 0.32.11 |
+| lottie-react-native | 5.1.5 |
+| react-native-elements | v4|
+
+
 `UI Example`
 
 ### Login Success
