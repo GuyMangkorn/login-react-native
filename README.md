@@ -1,6 +1,6 @@
 ## Login ReactNative
 
-**UI Example**
+`UI Example`
 
 ### Login Success
 <img src="/resource/25660209145434651.gif" style="height: 350px;"> 
