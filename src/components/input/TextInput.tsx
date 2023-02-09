@@ -52,6 +52,7 @@ const useStyles = makeStyles((theme) => ({
     color: theme.colors.primary
   },
   container: {
+    minHeight: 45,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',

@@ -2,7 +2,8 @@ import { NativeStackScreenProps } from '@react-navigation/native-stack'
 import { useTheme } from '@rneui/themed'
 import Lottie from 'lottie-react-native'
 import { useMemo } from 'react'
-import { ScrollView, View } from 'react-native'
+import { SafeAreaView, ScrollView, View } from 'react-native'
+import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view'
 import Animated, { FadeInUp, FadeOutUp } from 'react-native-reanimated'
 
 import Button from '../../components/button/Button'
@@ -34,21 +35,23 @@ const ResultScreen = (props: Props) => {
   }
 
   return (
-    <ScrollView style={styles.container}>
-      <Header title='Result' titleColor={color} />
-      <Animated.View entering={FadeInUp.delay(150)} exiting={FadeOutUp}>
-        {iconLottie}
-      </Animated.View>
-      <Animated.View style={styles.contentContainer} entering={FadeInUp.delay(250)} exiting={FadeOutUp}>
-        <Text type='h3' style={[styles.labelText, { color }]}>{resultText}</Text>
-        {props.route.params.isSuccess && <>
-          <Text type='h5' style={styles.labelText}>Welcome</Text>
-          <Text type='label' style={styles.labelText}>{authContext?.user.email}</Text>
-        </>}
-        <View style={styles.box_h20} />
-        <Button onPress={onClickHandler} title='PROCEED' type={typeBtn} />
-      </Animated.View>
-    </ScrollView>
+    <KeyboardAwareScrollView enableOnAndroid>
+      <SafeAreaView style={styles.container}>
+        <Header title='Result' titleColor={color} />
+        <Animated.View entering={FadeInUp.delay(500)} exiting={FadeOutUp}>
+          {iconLottie}
+        </Animated.View>
+        <Animated.View style={styles.contentContainer} entering={FadeInUp.delay(700)} exiting={FadeOutUp}>
+          <Text type='h3' style={[styles.labelText, { color }]}>{resultText}</Text>
+          {props.route.params.isSuccess && <>
+            <Text type='h5' style={styles.labelText}>Welcome</Text>
+            <Text type='label' style={styles.labelText}>{authContext?.user.email}</Text>
+          </>}
+          <View style={styles.box_h20} />
+          <Button onPress={onClickHandler} title='PROCEED' type={typeBtn} />
+        </Animated.View>
+      </SafeAreaView>
+    </KeyboardAwareScrollView>
   )
 }
 
