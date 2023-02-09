@@ -2,8 +2,13 @@
 
 <br/>
 
-<img src="/resource/25660209142209092.gif" style="height: 300px;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<img src="/resource/25660209142319672.gif" style="height: 300px;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<img src="/resource/25660209142519462.gif" style="height: 300px;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+##### Login Success
+<img src="/resource/25660209145434651.gif" style="height: 350px;"> 
+
+##### Login Fail
+<img src="/resource/25660209145554128.gif" style="height: 350px;"> 
+
+##### Validate Fail
+<img src="/resource/25660209145504270.gif" style="height: 350px;">
 
 <br/>
